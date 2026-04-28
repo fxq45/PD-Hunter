@@ -8,11 +8,11 @@
       "maintainer approved",
       "💎 Bounty"
     ],
-    "comment_count": 86,
+    "comment_count": 87,
     "open_pr_count": 1,
     "repository": "onyx-dot-app/onyx",
     "created_at": "2024-08-30T23:46:34Z",
-    "updated_at": "2026-04-26T23:02:26Z",
+    "updated_at": "2026-04-27T21:55:42Z",
     "author": "Weves",
     "body": "Pull in all tickets from a specified [Jira Service Management](https://www.atlassian.com/software/jira/service-management) project. \r\n\r\nCheckout the connector creation README here for more details on the best way to add new connectors: https://github.com/danswer-ai/danswer/blob/main/backend/danswer/connectors/README.md. ",
     "hunter_intelligence": {
@@ -58,7 +58,7 @@
         "amount": 10,
         "feasibility": 60,
         "competition": 46,
-        "freshness": 79
+        "freshness": 78
       }
     }
   },
@@ -276,7 +276,7 @@
         "amount": 12,
         "feasibility": 60,
         "competition": 57,
-        "freshness": 70
+        "freshness": 69
       }
     }
   },
@@ -432,7 +432,7 @@
         "amount": 20,
         "feasibility": 30,
         "competition": 67,
-        "freshness": 79
+        "freshness": 78
       }
     }
   },
@@ -497,7 +497,7 @@
         "amount": 0,
         "feasibility": 90,
         "competition": 77,
-        "freshness": 79
+        "freshness": 78
       }
     }
   },
@@ -524,7 +524,7 @@
       "bounty_tier": "B-Tier",
       "bounty_amount": 0,
       "is_hidden_gem": false,
-      "bounty_score": 43,
+      "bounty_score": 42,
       "score_breakdown": {
         "amount": 0,
         "feasibility": 60,
@@ -594,7 +594,7 @@
         "amount": 2,
         "feasibility": 60,
         "competition": 58,
-        "freshness": 69
+        "freshness": 68
       }
     }
   },
@@ -854,7 +854,7 @@
         "amount": 0,
         "feasibility": 60,
         "competition": 70,
-        "freshness": 98
+        "freshness": 97
       }
     }
   },
@@ -1684,7 +1684,7 @@
         "amount": 2,
         "feasibility": 60,
         "competition": 98,
-        "freshness": 96
+        "freshness": 95
       }
     }
   },
@@ -2183,7 +2183,7 @@
         "amount": 0,
         "feasibility": 60,
         "competition": 36,
-        "freshness": 98
+        "freshness": 97
       }
     }
   },
@@ -2369,7 +2369,7 @@
         "amount": 0,
         "feasibility": 60,
         "competition": 33,
-        "freshness": 57
+        "freshness": 56
       }
     }
   },
@@ -2716,7 +2716,7 @@
         "amount": 0,
         "feasibility": 60,
         "competition": 84,
-        "freshness": 98
+        "freshness": 97
       }
     }
   },
@@ -3945,7 +3945,7 @@
         "amount": 0,
         "feasibility": 60,
         "competition": 92,
-        "freshness": 98
+        "freshness": 97
       }
     }
   },
