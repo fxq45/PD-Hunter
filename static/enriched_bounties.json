@@ -213,7 +213,7 @@
         "amount": 0,
         "feasibility": 90,
         "competition": 63,
-        "freshness": 99
+        "freshness": 98
       }
     }
   },
@@ -339,7 +339,7 @@
         "amount": 0,
         "feasibility": 60,
         "competition": 55,
-        "freshness": 96
+        "freshness": 95
       }
     }
   },
@@ -529,7 +529,7 @@
         "amount": 0,
         "feasibility": 60,
         "competition": 53,
-        "freshness": 98
+        "freshness": 97
       }
     }
   },
@@ -3667,7 +3667,7 @@
         "amount": 5,
         "feasibility": 60,
         "competition": 56,
-        "freshness": 78
+        "freshness": 77
       }
     }
   },
@@ -3914,7 +3914,7 @@
         "amount": 80,
         "feasibility": 60,
         "competition": 92,
-        "freshness": 95
+        "freshness": 94
       }
     }
   },
@@ -3976,7 +3976,7 @@
         "amount": 0,
         "feasibility": 60,
         "competition": 96,
-        "freshness": 36
+        "freshness": 35
       }
     }
   }
