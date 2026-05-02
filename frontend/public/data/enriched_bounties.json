@@ -26,39 +26,7 @@
         "amount": 0,
         "feasibility": 30,
         "competition": 0,
-        "freshness": 100
-      }
-    }
-  },
-  {
-    "number": 37277,
-    "title": "Replace ModemManager with modem.py",
-    "url": "https://github.com/commaai/openpilot/issues/37277",
-    "state": "open",
-    "labels": [
-      "refactor",
-      "bounty",
-      "comma three"
-    ],
-    "comment_count": 12,
-    "open_pr_count": 2,
-    "repository": "commaai/openpilot",
-    "created_at": "2026-02-20T18:44:57Z",
-    "updated_at": "2026-03-15T16:44:41Z",
-    "author": "adeebshihadeh",
-    "body": "Let's replace ModemManager with ~200 lines of Python. Faster boot times, better [reliability](https://github.com/commaai/openpilot/blob/b27fa58444766c47f1ef980af79d324a669012c4/system/hardware/hardwared.py#L135), and tinier AGNOS.\n\n---\n\nBounty targets\n* All of openpilot works\n* Works on both comma 3X and comma four\n* At least 10 Discord users run it for a ~week and sign off on it, both with prime and non-prime service\n\nMisc notes:\n* comma 3X uses [Quectel EG25](https://www.quectel.com/product/lte-eg25-g/)\n* comma four uses [Quectl EG916](https://www.quectel.com/product/lte-cat-1-bis-eg916q-gl/)\n* Let's try not to make the comma 3X and comma four code paths too different if possible\n  * comma 3X currently uses QMI, but I think we can get away with just AT commands\n* routing priority still needs to work properly (e.g. WiFi > LTE when both are up)\n* We'll need to replace dbus, maybe just write a dumb state file to `/dev/shm/modem_state.txt`?\n\n**Bonus target ($500):** `ping -c 1 google.com` works <1 min after powering up a comma four with comma prime.",
-    "hunter_intelligence": {
-      "friction_level": "Medium",
-      "technical_hint": "Focus on implementing AT command handling for both Quectel modems and ensure routing priority logic is preserved while replacing dbus with a lightweight state management approach like a shared memory file.",
-      "bounty_tier": "A-Tier",
-      "bounty_amount": 500,
-      "is_hidden_gem": false,
-      "bounty_score": 41,
-      "score_breakdown": {
-        "amount": 10,
-        "feasibility": 60,
-        "competition": 46,
-        "freshness": 76
+        "freshness": 99
       }
     }
   },
@@ -1077,7 +1045,7 @@
         "amount": 10,
         "feasibility": 60,
         "competition": 8,
-        "freshness": 92
+        "freshness": 91
       }
     }
   },
@@ -2166,7 +2134,7 @@
       "bounty"
     ],
     "comment_count": 20,
-    "open_pr_count": 1,
+    "open_pr_count": 0,
     "repository": "commaai/agnos-builder",
     "created_at": "2024-05-25T23:05:47Z",
     "updated_at": "2026-05-01T01:41:54Z",
@@ -2178,11 +2146,11 @@
       "bounty_tier": "B-Tier",
       "bounty_amount": 0,
       "is_hidden_gem": false,
-      "bounty_score": 41,
+      "bounty_score": 44,
       "score_breakdown": {
         "amount": 0,
         "feasibility": 60,
-        "competition": 45,
+        "competition": 60,
         "freshness": 99
       }
     }
@@ -3761,7 +3729,7 @@
         "amount": 5,
         "feasibility": 60,
         "competition": 90,
-        "freshness": 73
+        "freshness": 72
       }
     }
   },
@@ -3977,6 +3945,38 @@
         "feasibility": 60,
         "competition": 96,
         "freshness": 34
+      }
+    }
+  },
+  {
+    "number": 37277,
+    "title": "Replace ModemManager with modem.py",
+    "url": "https://github.com/commaai/openpilot/issues/37277",
+    "state": "CLOSED",
+    "labels": [
+      "refactor",
+      "bounty",
+      "comma three"
+    ],
+    "comment_count": 11,
+    "open_pr_count": 1,
+    "repository": "commaai/openpilot",
+    "created_at": "2026-02-20T18:44:57Z",
+    "updated_at": "2026-05-02T17:04:55Z",
+    "author": "adeebshihadeh",
+    "body": "Let's replace ModemManager with ~200 lines of Python. Faster boot times, better [reliability](https://github.com/commaai/openpilot/blob/b27fa58444766c47f1ef980af79d324a669012c4/system/hardware/hardwared.py#L135), and tinier AGNOS.\n\n---\n\nBounty targets\n* All of openpilot works\n* Works on both comma 3X and comma four\n* At least 10 Discord users run it for a ~week and sign off on it, both with prime and non-prime service\n\nMisc notes:\n* comma 3X uses [Quectel EG25](https://www.quectel.com/product/lte-eg25-g/)\n* comma four uses [Quectl EG916](https://www.quectel.com/product/lte-cat-1-bis-eg916q-gl/)\n* Let's try not to make the comma 3X and comma four code paths too different if possible\n  * comma 3X currently uses QMI, but I think we can get away with just AT commands\n* routing priority still needs to work properly (e.g. WiFi > LTE when both are up)\n* We'll need to replace dbus, maybe just write a dumb state file to `/dev/shm/modem_state.txt`?\n\n**Bonus target ($500):** `ping -c 1 google.com` works <1 min after powering up a comma four with comma prime.",
+    "hunter_intelligence": {
+      "friction_level": "Medium",
+      "technical_hint": "Focus on implementing AT command handling for both Quectel modems and ensure routing priority logic is preserved while replacing dbus with a lightweight state management approach like a shared memory file.",
+      "bounty_tier": "A-Tier",
+      "bounty_amount": 500,
+      "is_hidden_gem": false,
+      "bounty_score": 49,
+      "score_breakdown": {
+        "amount": 10,
+        "feasibility": 60,
+        "competition": 63,
+        "freshness": 100
       }
     }
   }

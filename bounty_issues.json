@@ -17,24 +17,6 @@
     "body": "Pull in all tickets from a specified [Jira Service Management](https://www.atlassian.com/software/jira/service-management) project. \r\n\r\nCheckout the connector creation README here for more details on the best way to add new connectors: https://github.com/danswer-ai/danswer/blob/main/backend/danswer/connectors/README.md. "
   },
   {
-    "number": 37277,
-    "title": "Replace ModemManager with modem.py",
-    "url": "https://github.com/commaai/openpilot/issues/37277",
-    "state": "open",
-    "labels": [
-      "refactor",
-      "bounty",
-      "comma three"
-    ],
-    "comment_count": 12,
-    "open_pr_count": 2,
-    "repository": "commaai/openpilot",
-    "created_at": "2026-02-20T18:44:57Z",
-    "updated_at": "2026-03-15T16:44:41Z",
-    "author": "adeebshihadeh",
-    "body": "Let's replace ModemManager with ~200 lines of Python. Faster boot times, better [reliability](https://github.com/commaai/openpilot/blob/b27fa58444766c47f1ef980af79d324a669012c4/system/hardware/hardwared.py#L135), and tinier AGNOS.\n\n---\n\nBounty targets\n* All of openpilot works\n* Works on both comma 3X and comma four\n* At least 10 Discord users run it for a ~week and sign off on it, both with prime and non-prime service\n\nMisc notes:\n* comma 3X uses [Quectel EG25](https://www.quectel.com/product/lte-eg25-g/)\n* comma four uses [Quectl EG916](https://www.quectel.com/product/lte-cat-1-bis-eg916q-gl/)\n* Let's try not to make the comma 3X and comma four code paths too different if possible\n  * comma 3X currently uses QMI, but I think we can get away with just AT commands\n* routing priority still needs to work properly (e.g. WiFi \u003e LTE when both are up)\n* We'll need to replace dbus, maybe just write a dumb state file to `/dev/shm/modem_state.txt`?\n\n**Bonus target ($500):** `ping -c 1 google.com` works \u003c1 min after powering up a comma four with comma prime."
-  },
-  {
     "number": 2239,
     "title": "Setup proper pip package",
     "url": "https://github.com/commaai/panda/issues/2239",
@@ -1214,7 +1196,7 @@
       "bounty"
     ],
     "comment_count": 20,
-    "open_pr_count": 1,
+    "open_pr_count": 0,
     "repository": "commaai/agnos-builder",
     "created_at": "2024-05-25T23:05:47Z",
     "updated_at": "2026-05-01T01:41:54Z",
@@ -2215,5 +2197,23 @@
     "updated_at": "2025-12-21T00:56:20Z",
     "author": "adeebshihadeh",
     "body": "We use [cppcheck](https://github.com/danmar/cppcheck) for MISRA C:2012 static analysis, see [`opendbc/safety/tests/misra`](https://github.com/commaai/opendbc/tree/master/opendbc/safety/tests/misra). [NaiveSystems Analyze](https://github.com/naivesystems/analyze) seems to be a new open source static analysis tool that supports [MISRA C](https://en.wikipedia.org/wiki/MISRA_C). Let's get it setup, and hopefully \n\nThis bounty is for getting a version of [`test_misra.sh`](https://github.com/commaai/opendbc/blob/master/opendbc/safety/tests/misra/test_misra.sh) merged that uses NaiveSystems Analyze. Fixing any new issues it flags is not part of this bounty. Let's just get it running and see what it finds."
+  },
+  {
+    "number": 37277,
+    "title": "Replace ModemManager with modem.py",
+    "url": "https://github.com/commaai/openpilot/issues/37277",
+    "state": "CLOSED",
+    "labels": [
+      "refactor",
+      "bounty",
+      "comma three"
+    ],
+    "comment_count": 11,
+    "open_pr_count": 1,
+    "repository": "commaai/openpilot",
+    "created_at": "2026-02-20T18:44:57Z",
+    "updated_at": "2026-05-02T17:04:55Z",
+    "author": "adeebshihadeh",
+    "body": "Let's replace ModemManager with ~200 lines of Python. Faster boot times, better [reliability](https://github.com/commaai/openpilot/blob/b27fa58444766c47f1ef980af79d324a669012c4/system/hardware/hardwared.py#L135), and tinier AGNOS.\n\n---\n\nBounty targets\n* All of openpilot works\n* Works on both comma 3X and comma four\n* At least 10 Discord users run it for a ~week and sign off on it, both with prime and non-prime service\n\nMisc notes:\n* comma 3X uses [Quectel EG25](https://www.quectel.com/product/lte-eg25-g/)\n* comma four uses [Quectl EG916](https://www.quectel.com/product/lte-cat-1-bis-eg916q-gl/)\n* Let's try not to make the comma 3X and comma four code paths too different if possible\n  * comma 3X currently uses QMI, but I think we can get away with just AT commands\n* routing priority still needs to work properly (e.g. WiFi \u003e LTE when both are up)\n* We'll need to replace dbus, maybe just write a dumb state file to `/dev/shm/modem_state.txt`?\n\n**Bonus target ($500):** `ping -c 1 google.com` works \u003c1 min after powering up a comma four with comma prime."
   }
 ]
