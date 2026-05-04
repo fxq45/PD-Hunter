@@ -1196,7 +1196,7 @@
       "bounty"
     ],
     "comment_count": 20,
-    "open_pr_count": 0,
+    "open_pr_count": 1,
     "repository": "commaai/agnos-builder",
     "created_at": "2024-05-25T23:05:47Z",
     "updated_at": "2026-05-01T01:41:54Z",
@@ -1720,7 +1720,7 @@
       "enhancement"
     ],
     "comment_count": 9,
-    "open_pr_count": 0,
+    "open_pr_count": 1,
     "repository": "commaai/new-connect",
     "created_at": "2024-07-05T05:26:19Z",
     "updated_at": "2025-04-05T00:31:10Z",
@@ -1810,7 +1810,7 @@
       "cleanup"
     ],
     "comment_count": 1,
-    "open_pr_count": 1,
+    "open_pr_count": 0,
     "repository": "commaai/new-connect",
     "created_at": "2024-07-05T20:22:43Z",
     "updated_at": "2024-07-14T05:38:38Z",
