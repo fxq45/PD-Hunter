@@ -118,7 +118,7 @@
         "amount": 2,
         "feasibility": 90,
         "competition": 73,
-        "freshness": 95
+        "freshness": 94
       }
     }
   },
@@ -213,7 +213,7 @@
         "amount": 0,
         "feasibility": 90,
         "competition": 67,
-        "freshness": 89
+        "freshness": 88
       }
     }
   },
@@ -402,7 +402,7 @@
         "amount": 0,
         "feasibility": 90,
         "competition": 79,
-        "freshness": 67
+        "freshness": 66
       }
     }
   },
@@ -526,7 +526,7 @@
       "bounty_tier": "B-Tier",
       "bounty_amount": 100,
       "is_hidden_gem": false,
-      "bounty_score": 40,
+      "bounty_score": 39,
       "score_breakdown": {
         "amount": 2,
         "feasibility": 60,
