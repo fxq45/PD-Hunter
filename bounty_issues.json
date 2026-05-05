@@ -8,11 +8,11 @@
       "maintainer approved",
       "💎 Bounty"
     ],
-    "comment_count": 87,
+    "comment_count": 89,
     "open_pr_count": 1,
     "repository": "onyx-dot-app/onyx",
     "created_at": "2024-08-30T23:46:34Z",
-    "updated_at": "2026-05-04T23:51:15Z",
+    "updated_at": "2026-05-05T16:15:09Z",
     "author": "Weves",
     "body": "Pull in all tickets from a specified [Jira Service Management](https://www.atlassian.com/software/jira/service-management) project. \r\n\r\nCheckout the connector creation README here for more details on the best way to add new connectors: https://github.com/danswer-ai/danswer/blob/main/backend/danswer/connectors/README.md. "
   },
@@ -782,7 +782,7 @@
       "bounty"
     ],
     "comment_count": 0,
-    "open_pr_count": 15,
+    "open_pr_count": 16,
     "repository": "commaai/flash",
     "created_at": "2023-07-28T10:38:15Z",
     "updated_at": "2024-01-28T01:29:19Z",
@@ -1039,7 +1039,7 @@
       "bounty"
     ],
     "comment_count": 0,
-    "open_pr_count": 13,
+    "open_pr_count": 14,
     "repository": "commaai/flash",
     "created_at": "2024-04-17T21:33:17Z",
     "updated_at": "2024-04-18T05:20:36Z",
@@ -1810,7 +1810,7 @@
       "cleanup"
     ],
     "comment_count": 1,
-    "open_pr_count": 0,
+    "open_pr_count": 1,
     "repository": "commaai/new-connect",
     "created_at": "2024-07-05T20:22:43Z",
     "updated_at": "2024-07-14T05:38:38Z",
