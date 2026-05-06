@@ -8,11 +8,11 @@
       "maintainer approved",
       "💎 Bounty"
     ],
-    "comment_count": 89,
+    "comment_count": 90,
     "open_pr_count": 1,
     "repository": "onyx-dot-app/onyx",
     "created_at": "2024-08-30T23:46:34Z",
-    "updated_at": "2026-05-05T16:15:09Z",
+    "updated_at": "2026-05-06T12:50:30Z",
     "author": "Weves",
     "body": "Pull in all tickets from a specified [Jira Service Management](https://www.atlassian.com/software/jira/service-management) project. \r\n\r\nCheckout the connector creation README here for more details on the best way to add new connectors: https://github.com/danswer-ai/danswer/blob/main/backend/danswer/connectors/README.md. ",
     "hunter_intelligence": {
@@ -52,12 +52,12 @@
       "bounty_tier": "B-Tier",
       "bounty_amount": 0,
       "is_hidden_gem": true,
-      "bounty_score": 54,
+      "bounty_score": 53,
       "score_breakdown": {
         "amount": 0,
         "feasibility": 90,
         "competition": 69,
-        "freshness": 95
+        "freshness": 94
       }
     }
   },
@@ -83,12 +83,12 @@
       "bounty_tier": "B-Tier",
       "bounty_amount": 0,
       "is_hidden_gem": true,
-      "bounty_score": 49,
+      "bounty_score": 48,
       "score_breakdown": {
         "amount": 0,
         "feasibility": 90,
         "competition": 67,
-        "freshness": 65
+        "freshness": 64
       }
     }
   },
@@ -100,11 +100,11 @@
     "labels": [
       "bounty"
     ],
-    "comment_count": 6,
+    "comment_count": 7,
     "open_pr_count": 1,
     "repository": "commaai/flash",
     "created_at": "2025-04-03T18:35:54Z",
-    "updated_at": "2026-04-24T07:21:56Z",
+    "updated_at": "2026-05-06T09:55:52Z",
     "author": "adeebshihadeh",
     "body": "Make a video walkthrough of flash.comma.ai, then make a PR to embed it onto the site.\n\nGood example videos:\n* https://www.youtube.com/watch?v=NAz5NGnaDKs&list=PLawfivpGQ-voT2siiz61hgVhdhtfy2y0P\n* https://www.youtube.com/watch?v=gNnRmEyVSVQ&t=89s\n\nMust be high quality!",
     "hunter_intelligence": {
@@ -117,8 +117,8 @@
       "score_breakdown": {
         "amount": 2,
         "feasibility": 90,
-        "competition": 73,
-        "freshness": 94
+        "competition": 71,
+        "freshness": 100
       }
     }
   },
@@ -181,7 +181,7 @@
         "amount": 0,
         "feasibility": 90,
         "competition": 61,
-        "freshness": 97
+        "freshness": 96
       }
     }
   },
@@ -338,7 +338,7 @@
         "amount": 0,
         "feasibility": 60,
         "competition": 75,
-        "freshness": 69
+        "freshness": 68
       }
     }
   },
@@ -2134,7 +2134,7 @@
       "bounty"
     ],
     "comment_count": 20,
-    "open_pr_count": 1,
+    "open_pr_count": 0,
     "repository": "commaai/agnos-builder",
     "created_at": "2024-05-25T23:05:47Z",
     "updated_at": "2026-05-01T01:41:54Z",
@@ -2146,11 +2146,11 @@
       "bounty_tier": "B-Tier",
       "bounty_amount": 0,
       "is_hidden_gem": false,
-      "bounty_score": 40,
+      "bounty_score": 44,
       "score_breakdown": {
         "amount": 0,
         "feasibility": 60,
-        "competition": 45,
+        "competition": 60,
         "freshness": 97
       }
     }
