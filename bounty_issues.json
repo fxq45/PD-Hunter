@@ -12,7 +12,7 @@
     "open_pr_count": 1,
     "repository": "onyx-dot-app/onyx",
     "created_at": "2024-08-30T23:46:34Z",
-    "updated_at": "2026-05-06T18:11:35Z",
+    "updated_at": "2026-05-08T14:55:34Z",
     "author": "Weves",
     "body": "Pull in all tickets from a specified [Jira Service Management](https://www.atlassian.com/software/jira/service-management) project. \r\n\r\nCheckout the connector creation README here for more details on the best way to add new connectors: https://github.com/danswer-ai/danswer/blob/main/backend/danswer/connectors/README.md. "
   },
@@ -1810,7 +1810,7 @@
       "cleanup"
     ],
     "comment_count": 1,
-    "open_pr_count": 1,
+    "open_pr_count": 0,
     "repository": "commaai/new-connect",
     "created_at": "2024-07-05T20:22:43Z",
     "updated_at": "2024-07-14T05:38:38Z",
