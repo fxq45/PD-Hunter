@@ -100,11 +100,11 @@
     "labels": [
       "bounty"
     ],
-    "comment_count": 7,
+    "comment_count": 9,
     "open_pr_count": 1,
     "repository": "commaai/flash",
     "created_at": "2025-04-03T18:35:54Z",
-    "updated_at": "2026-05-06T09:55:52Z",
+    "updated_at": "2026-05-08T20:42:02Z",
     "author": "adeebshihadeh",
     "body": "Make a video walkthrough of flash.comma.ai, then make a PR to embed it onto the site.\n\nGood example videos:\n* https://www.youtube.com/watch?v=NAz5NGnaDKs&list=PLawfivpGQ-voT2siiz61hgVhdhtfy2y0P\n* https://www.youtube.com/watch?v=gNnRmEyVSVQ&t=89s\n\nMust be high quality!",
     "hunter_intelligence": {
@@ -113,12 +113,12 @@
       "bounty_tier": "B-Tier",
       "bounty_amount": 100,
       "is_hidden_gem": true,
-      "bounty_score": 55,
+      "bounty_score": 54,
       "score_breakdown": {
         "amount": 2,
         "feasibility": 90,
-        "competition": 71,
-        "freshness": 99
+        "competition": 67,
+        "freshness": 100
       }
     }
   },
@@ -307,7 +307,7 @@
         "amount": 0,
         "feasibility": 60,
         "competition": 55,
-        "freshness": 91
+        "freshness": 90
       }
     }
   },
@@ -466,7 +466,7 @@
         "amount": 0,
         "feasibility": 60,
         "competition": 53,
-        "freshness": 93
+        "freshness": 92
       }
     }
   },
@@ -3635,7 +3635,7 @@
         "amount": 5,
         "feasibility": 60,
         "competition": 56,
-        "freshness": 73
+        "freshness": 72
       }
     }
   },
@@ -3882,7 +3882,7 @@
         "amount": 80,
         "feasibility": 60,
         "competition": 92,
-        "freshness": 90
+        "freshness": 89
       }
     }
   },
@@ -3944,7 +3944,7 @@
         "amount": 0,
         "feasibility": 60,
         "competition": 96,
-        "freshness": 31
+        "freshness": 30
       }
     }
   },
