@@ -26,7 +26,7 @@
         "amount": 0,
         "feasibility": 30,
         "competition": 0,
-        "freshness": 100
+        "freshness": 99
       }
     }
   },
@@ -369,7 +369,7 @@
         "amount": 20,
         "feasibility": 30,
         "competition": 67,
-        "freshness": 73
+        "freshness": 72
       }
     }
   },
@@ -434,7 +434,7 @@
         "amount": 0,
         "feasibility": 90,
         "competition": 77,
-        "freshness": 73
+        "freshness": 72
       }
     }
   },
@@ -1621,7 +1621,7 @@
         "amount": 2,
         "feasibility": 60,
         "competition": 98,
-        "freshness": 90
+        "freshness": 89
       }
     }
   },
@@ -2684,7 +2684,7 @@
         "amount": 0,
         "feasibility": 60,
         "competition": 84,
-        "freshness": 92
+        "freshness": 91
       }
     }
   },
@@ -3238,7 +3238,7 @@
       "cleanup"
     ],
     "comment_count": 1,
-    "open_pr_count": 1,
+    "open_pr_count": 0,
     "repository": "commaai/new-connect",
     "created_at": "2024-07-05T20:22:43Z",
     "updated_at": "2024-07-14T05:38:38Z",
@@ -3250,11 +3250,11 @@
       "bounty_tier": "B-Tier",
       "bounty_amount": 0,
       "is_hidden_gem": true,
-      "bounty_score": 35,
+      "bounty_score": 39,
       "score_breakdown": {
         "amount": 0,
         "feasibility": 60,
-        "competition": 83,
+        "competition": 98,
         "freshness": 0
       }
     }
@@ -3913,7 +3913,7 @@
         "amount": 0,
         "feasibility": 60,
         "competition": 92,
-        "freshness": 92
+        "freshness": 91
       }
     }
   },
@@ -3976,7 +3976,7 @@
         "amount": 10,
         "feasibility": 60,
         "competition": 63,
-        "freshness": 97
+        "freshness": 96
       }
     }
   }
