@@ -58,11 +58,11 @@
     "labels": [
       "bounty"
     ],
-    "comment_count": 9,
+    "comment_count": 10,
     "open_pr_count": 1,
     "repository": "commaai/flash",
     "created_at": "2025-04-03T18:35:54Z",
-    "updated_at": "2026-05-08T20:42:02Z",
+    "updated_at": "2026-05-12T02:16:11Z",
     "author": "adeebshihadeh",
     "body": "Make a video walkthrough of flash.comma.ai, then make a PR to embed it onto the site.\n\nGood example videos:\n* https://www.youtube.com/watch?v=NAz5NGnaDKs\u0026list=PLawfivpGQ-voT2siiz61hgVhdhtfy2y0P\n* https://www.youtube.com/watch?v=gNnRmEyVSVQ\u0026t=89s\n\nMust be high quality!"
   },
@@ -216,11 +216,11 @@
       "car",
       "hyundai"
     ],
-    "comment_count": 3,
+    "comment_count": 4,
     "open_pr_count": 1,
     "repository": "commaai/openpilot",
     "created_at": "2024-01-10T01:55:23Z",
-    "updated_at": "2026-02-27T04:18:28Z",
+    "updated_at": "2026-05-11T19:59:32Z",
     "author": "sshane",
     "body": "Currently we diverge from the original behavior when openpilot (alpha) longitudinal is used, which has confused some users in the past having them ask on Discord how to engage.\r\n\r\nWe should match the stock longitudinal button logic in panda and openpilot, here's what we don't match:\r\n- [ ] CAN cars with set, resume, and main on button\r\n  - [ ] Match main on button, which is a grate on whether cruise is \"available\". For example, pressing it has no effect on availability, nor resetting cruise speed, etc. \r\n  - [ ] Resume should not be allowed if no cruise speed set (immediately after toggling main/availability)\r\n- [ ] CAN and CAN FD cars with set, [pause/resume](https://github.com/commaai/openpilot/assets/25857203/5402ad78-2599-4232-b673-aed62a8fb270), and main on button that toggles cruise:\r\n  - [ ] Above criteria for main button, in addition to enabling cruise on rising edge the first time.\r\n  - [ ] Pause/resume button should toggle cruise on and off if cruise is available.\r\n- [ ] Not all HKG cars have this main and pause/resume button functionality and this button shows up as the normal resume button to openpilot, so we ideally need a way to differentiate these buttons/cars.\r\n\r\nThis needs to be done for both Hyundai's CAN and CAN FD platforms."
   },
@@ -1810,7 +1810,7 @@
       "cleanup"
     ],
     "comment_count": 1,
-    "open_pr_count": 1,
+    "open_pr_count": 0,
     "repository": "commaai/new-connect",
     "created_at": "2024-07-05T20:22:43Z",
     "updated_at": "2024-07-14T05:38:38Z",
