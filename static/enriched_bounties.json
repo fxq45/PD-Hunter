@@ -12,7 +12,7 @@
     "open_pr_count": 1,
     "repository": "onyx-dot-app/onyx",
     "created_at": "2024-08-30T23:46:34Z",
-    "updated_at": "2026-05-12T19:25:04Z",
+    "updated_at": "2026-05-12T22:35:37Z",
     "author": "Weves",
     "body": "Pull in all tickets from a specified [Jira Service Management](https://www.atlassian.com/software/jira/service-management) project. \r\n\r\nCheckout the connector creation README here for more details on the best way to add new connectors: https://github.com/danswer-ai/danswer/blob/main/backend/danswer/connectors/README.md. ",
     "hunter_intelligence": {
@@ -118,7 +118,7 @@
         "amount": 2,
         "feasibility": 90,
         "competition": 65,
-        "freshness": 100
+        "freshness": 99
       }
     }
   },
@@ -307,7 +307,7 @@
         "amount": 0,
         "feasibility": 60,
         "competition": 55,
-        "freshness": 89
+        "freshness": 88
       }
     }
   },
@@ -402,7 +402,7 @@
         "amount": 0,
         "feasibility": 90,
         "competition": 77,
-        "freshness": 100
+        "freshness": 99
       }
     }
   },
@@ -466,7 +466,7 @@
         "amount": 0,
         "feasibility": 60,
         "competition": 53,
-        "freshness": 91
+        "freshness": 90
       }
     }
   },
@@ -2134,7 +2134,7 @@
       "bounty"
     ],
     "comment_count": 20,
-    "open_pr_count": 1,
+    "open_pr_count": 0,
     "repository": "commaai/agnos-builder",
     "created_at": "2024-05-25T23:05:47Z",
     "updated_at": "2026-05-01T01:41:54Z",
@@ -2146,11 +2146,11 @@
       "bounty_tier": "B-Tier",
       "bounty_amount": 0,
       "is_hidden_gem": false,
-      "bounty_score": 40,
+      "bounty_score": 44,
       "score_breakdown": {
         "amount": 0,
         "feasibility": 60,
-        "competition": 45,
+        "competition": 60,
         "freshness": 94
       }
     }
@@ -3078,7 +3078,7 @@
       "enhancement"
     ],
     "comment_count": 9,
-    "open_pr_count": 1,
+    "open_pr_count": 0,
     "repository": "commaai/new-connect",
     "created_at": "2024-07-05T05:26:19Z",
     "updated_at": "2025-04-05T00:31:10Z",
@@ -3090,11 +3090,11 @@
       "bounty_tier": "B-Tier",
       "bounty_amount": 0,
       "is_hidden_gem": true,
-      "bounty_score": 31,
+      "bounty_score": 35,
       "score_breakdown": {
         "amount": 0,
         "feasibility": 60,
-        "competition": 67,
+        "competition": 82,
         "freshness": 0
       }
     }
@@ -3238,7 +3238,7 @@
       "cleanup"
     ],
     "comment_count": 1,
-    "open_pr_count": 0,
+    "open_pr_count": 1,
     "repository": "commaai/new-connect",
     "created_at": "2024-07-05T20:22:43Z",
     "updated_at": "2024-07-14T05:38:38Z",
@@ -3250,11 +3250,11 @@
       "bounty_tier": "B-Tier",
       "bounty_amount": 0,
       "is_hidden_gem": true,
-      "bounty_score": 39,
+      "bounty_score": 35,
       "score_breakdown": {
         "amount": 0,
         "feasibility": 60,
-        "competition": 98,
+        "competition": 83,
         "freshness": 0
       }
     }
@@ -3635,7 +3635,7 @@
         "amount": 5,
         "feasibility": 60,
         "competition": 56,
-        "freshness": 71
+        "freshness": 70
       }
     }
   },
@@ -3882,7 +3882,7 @@
         "amount": 80,
         "feasibility": 60,
         "competition": 92,
-        "freshness": 88
+        "freshness": 87
       }
     }
   },
@@ -3944,7 +3944,7 @@
         "amount": 0,
         "feasibility": 60,
         "competition": 96,
-        "freshness": 29
+        "freshness": 28
       }
     }
   },
