@@ -195,11 +195,11 @@
       "PC",
       "simulation"
     ],
-    "comment_count": 9,
+    "comment_count": 10,
     "open_pr_count": 1,
     "repository": "commaai/openpilot",
     "created_at": "2024-08-06T19:55:55Z",
-    "updated_at": "2026-04-12T07:18:10Z",
+    "updated_at": "2026-05-16T15:12:33Z",
     "author": "adeebshihadeh",
     "body": "Must work as well as on Linux.\r\n\r\nAt a minimum, this means it must pass the CI test: https://github.com/commaai/openpilot/blob/master/tools/sim/tests/test_metadrive_bridge.py.",
     "hunter_intelligence": {
@@ -208,12 +208,12 @@
       "bounty_tier": "B-Tier",
       "bounty_amount": 0,
       "is_hidden_gem": true,
-      "bounty_score": 51,
+      "bounty_score": 53,
       "score_breakdown": {
         "amount": 0,
         "feasibility": 90,
-        "competition": 67,
-        "freshness": 83
+        "competition": 65,
+        "freshness": 100
       }
     }
   },
@@ -276,38 +276,6 @@
         "feasibility": 90,
         "competition": 83,
         "freshness": 0
-      }
-    }
-  },
-  {
-    "number": 32611,
-    "title": "Improve pytest collection time to <1s",
-    "url": "https://github.com/commaai/openpilot/issues/32611",
-    "state": "open",
-    "labels": [
-      "enhancement",
-      "CI / testing",
-      "bounty"
-    ],
-    "comment_count": 15,
-    "open_pr_count": 1,
-    "repository": "commaai/openpilot",
-    "created_at": "2024-06-03T23:14:00Z",
-    "updated_at": "2026-04-19T23:14:33Z",
-    "author": "sshane",
-    "body": "Currently it takes ~6-7s with these plugins:\r\n\r\n```\r\nplatform linux -- Python 3.11.4, pytest-8.2.1, pluggy-1.5.0\r\nbenchmark: 4.0.0 (defaults: timer=time.perf_counter disable_gc=False min_rounds=5 min_time=0.000005 max_time=1.0 calibration_precision=10 warmup=False warmup_iterations=100000)\r\nUsing --randomly-seed=3123610973\r\nrootdir: /home/batman/openpilot\r\nconfigfile: pyproject.toml\r\ntestpaths: tools/, common/, system/, selfdrive/\r\nplugins: anyio-4.3.0, timeout-2.3.1, xdist-3.6.1, cpp-2.5.0, cov-5.0.0, mock-3.14.0, forked-1.6.0, dash-2.11.1, benchmark-4.0.0, randomly-3.15.0, subtests-0.12.1, flaky-3.8.1, hypothesis-6.47.5, asyncio-0.23.7, nbmake-1.5.3, repeat-0.9.3\r\nasyncio: mode=Mode.STRICT\r\n\r\n============================================================================= 4011 tests collected in 6.46s ==============================================================================\r\n\r\nreal    0m8.935s\r\nuser    0m10.833s\r\nsys     0m2.163s\r\n```\r\n\r\n\r\nVerification:\r\n\r\nRun `time pytest --collect-only` in the root openpilot directory and post both the `real` time and the collection time as reported by pytest (`=== 4011 tests collected in 6.61s ===`). Include the times before and after your PR.",
-    "hunter_intelligence": {
-      "friction_level": "Medium",
-      "technical_hint": "Optimize pytest configuration by reducing unnecessary plugins and test discovery paths, and consider using pytest's `--disable-warnings` and `--cache-clear` options to streamline collection.",
-      "bounty_tier": "B-Tier",
-      "bounty_amount": 0,
-      "is_hidden_gem": false,
-      "bounty_score": 41,
-      "score_breakdown": {
-        "amount": 0,
-        "feasibility": 60,
-        "competition": 55,
-        "freshness": 87
       }
     }
   },
@@ -1045,7 +1013,7 @@
         "amount": 10,
         "feasibility": 60,
         "competition": 8,
-        "freshness": 85
+        "freshness": 84
       }
     }
   },
@@ -2369,6 +2337,38 @@
         "feasibility": 60,
         "competition": 96,
         "freshness": 0
+      }
+    }
+  },
+  {
+    "number": 32611,
+    "title": "Improve pytest collection time to <1s",
+    "url": "https://github.com/commaai/openpilot/issues/32611",
+    "state": "CLOSED",
+    "labels": [
+      "enhancement",
+      "CI / testing",
+      "bounty"
+    ],
+    "comment_count": 16,
+    "open_pr_count": 0,
+    "repository": "commaai/openpilot",
+    "created_at": "2024-06-03T23:14:00Z",
+    "updated_at": "2026-05-16T16:38:36Z",
+    "author": "sshane",
+    "body": "Currently it takes ~6-7s with these plugins:\r\n\r\n```\r\nplatform linux -- Python 3.11.4, pytest-8.2.1, pluggy-1.5.0\r\nbenchmark: 4.0.0 (defaults: timer=time.perf_counter disable_gc=False min_rounds=5 min_time=0.000005 max_time=1.0 calibration_precision=10 warmup=False warmup_iterations=100000)\r\nUsing --randomly-seed=3123610973\r\nrootdir: /home/batman/openpilot\r\nconfigfile: pyproject.toml\r\ntestpaths: tools/, common/, system/, selfdrive/\r\nplugins: anyio-4.3.0, timeout-2.3.1, xdist-3.6.1, cpp-2.5.0, cov-5.0.0, mock-3.14.0, forked-1.6.0, dash-2.11.1, benchmark-4.0.0, randomly-3.15.0, subtests-0.12.1, flaky-3.8.1, hypothesis-6.47.5, asyncio-0.23.7, nbmake-1.5.3, repeat-0.9.3\r\nasyncio: mode=Mode.STRICT\r\n\r\n============================================================================= 4011 tests collected in 6.46s ==============================================================================\r\n\r\nreal    0m8.935s\r\nuser    0m10.833s\r\nsys     0m2.163s\r\n```\r\n\r\n\r\nVerification:\r\n\r\nRun `time pytest --collect-only` in the root openpilot directory and post both the `real` time and the collection time as reported by pytest (`=== 4011 tests collected in 6.61s ===`). Include the times before and after your PR.",
+    "hunter_intelligence": {
+      "friction_level": "Medium",
+      "technical_hint": "Optimize pytest configuration by reducing unnecessary plugins and test discovery paths, and consider using pytest's `--disable-warnings` and `--cache-clear` options to streamline collection.",
+      "bounty_tier": "B-Tier",
+      "bounty_amount": 0,
+      "is_hidden_gem": false,
+      "bounty_score": 47,
+      "score_breakdown": {
+        "amount": 0,
+        "feasibility": 60,
+        "competition": 68,
+        "freshness": 100
       }
     }
   },
@@ -3729,7 +3729,7 @@
         "amount": 5,
         "feasibility": 60,
         "competition": 90,
-        "freshness": 66
+        "freshness": 65
       }
     }
   },

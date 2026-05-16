@@ -111,11 +111,11 @@
       "PC",
       "simulation"
     ],
-    "comment_count": 9,
+    "comment_count": 10,
     "open_pr_count": 1,
     "repository": "commaai/openpilot",
     "created_at": "2024-08-06T19:55:55Z",
-    "updated_at": "2026-04-12T07:18:10Z",
+    "updated_at": "2026-05-16T15:12:33Z",
     "author": "adeebshihadeh",
     "body": "Must work as well as on Linux.\r\n\r\nAt a minimum, this means it must pass the CI test: https://github.com/commaai/openpilot/blob/master/tools/sim/tests/test_metadrive_bridge.py."
   },
@@ -152,24 +152,6 @@
     "updated_at": "2025-04-22T04:39:34Z",
     "author": "adeebshihadeh",
     "body": "[panda jungle v2](https://comma.ai/shop/panda-jungle) has an SD card slot. The goal is to use that SD card to replay CAN messages from an openpilot route instead of having to run [can_replay.py](https://github.com/commaai/openpilot/blob/master/tools/replay/can_replay.py).\r\n\r\nThe on-disk format doesn't matter; we just need an easy script to \"provision\" the SD card. "
-  },
-  {
-    "number": 32611,
-    "title": "Improve pytest collection time to \u003c1s",
-    "url": "https://github.com/commaai/openpilot/issues/32611",
-    "state": "open",
-    "labels": [
-      "enhancement",
-      "CI / testing",
-      "bounty"
-    ],
-    "comment_count": 15,
-    "open_pr_count": 1,
-    "repository": "commaai/openpilot",
-    "created_at": "2024-06-03T23:14:00Z",
-    "updated_at": "2026-04-19T23:14:33Z",
-    "author": "sshane",
-    "body": "Currently it takes ~6-7s with these plugins:\r\n\r\n```\r\nplatform linux -- Python 3.11.4, pytest-8.2.1, pluggy-1.5.0\r\nbenchmark: 4.0.0 (defaults: timer=time.perf_counter disable_gc=False min_rounds=5 min_time=0.000005 max_time=1.0 calibration_precision=10 warmup=False warmup_iterations=100000)\r\nUsing --randomly-seed=3123610973\r\nrootdir: /home/batman/openpilot\r\nconfigfile: pyproject.toml\r\ntestpaths: tools/, common/, system/, selfdrive/\r\nplugins: anyio-4.3.0, timeout-2.3.1, xdist-3.6.1, cpp-2.5.0, cov-5.0.0, mock-3.14.0, forked-1.6.0, dash-2.11.1, benchmark-4.0.0, randomly-3.15.0, subtests-0.12.1, flaky-3.8.1, hypothesis-6.47.5, asyncio-0.23.7, nbmake-1.5.3, repeat-0.9.3\r\nasyncio: mode=Mode.STRICT\r\n\r\n============================================================================= 4011 tests collected in 6.46s ==============================================================================\r\n\r\nreal    0m8.935s\r\nuser    0m10.833s\r\nsys     0m2.163s\r\n```\r\n\r\n\r\nVerification:\r\n\r\nRun `time pytest --collect-only` in the root openpilot directory and post both the `real` time and the collection time as reported by pytest (`=== 4011 tests collected in 6.61s ===`). Include the times before and after your PR."
   },
   {
     "number": 32425,
@@ -1321,6 +1303,24 @@
     "updated_at": "2024-06-03T23:23:18Z",
     "author": "adeebshihadeh",
     "body": "The demo experience is one route with some hardcoded API responses and \"if demo\" in a bunch of places.\r\n\r\nInstead, the demo should be a real user and hit all the same code paths a normal user does.  \r\n\r\nIt'll be a better demo experience, and it should enable external contributors without a device to more effectively contribute. \r\n\r\nEDIT: @sshane has setup a demo account accessible with the below token. $250 bounty for refactoring the demo to use this token and hit all the normal code paths a real user would.\r\n```\r\neyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDg1ODI0NjUsIm5iZiI6MTcxNzA0NjQ2NSwiaWF0IjoxNzE3MDQ2NDY1LCJpZGVudGl0eSI6IjBkZWNkZGNmZGYyNDFhNjAifQ.g3khyJgOkNvZny6Vh579cuQj1HLLGSDeauZbfZri9jw\r\n```"
+  },
+  {
+    "number": 32611,
+    "title": "Improve pytest collection time to \u003c1s",
+    "url": "https://github.com/commaai/openpilot/issues/32611",
+    "state": "CLOSED",
+    "labels": [
+      "enhancement",
+      "CI / testing",
+      "bounty"
+    ],
+    "comment_count": 16,
+    "open_pr_count": 0,
+    "repository": "commaai/openpilot",
+    "created_at": "2024-06-03T23:14:00Z",
+    "updated_at": "2026-05-16T16:38:36Z",
+    "author": "sshane",
+    "body": "Currently it takes ~6-7s with these plugins:\r\n\r\n```\r\nplatform linux -- Python 3.11.4, pytest-8.2.1, pluggy-1.5.0\r\nbenchmark: 4.0.0 (defaults: timer=time.perf_counter disable_gc=False min_rounds=5 min_time=0.000005 max_time=1.0 calibration_precision=10 warmup=False warmup_iterations=100000)\r\nUsing --randomly-seed=3123610973\r\nrootdir: /home/batman/openpilot\r\nconfigfile: pyproject.toml\r\ntestpaths: tools/, common/, system/, selfdrive/\r\nplugins: anyio-4.3.0, timeout-2.3.1, xdist-3.6.1, cpp-2.5.0, cov-5.0.0, mock-3.14.0, forked-1.6.0, dash-2.11.1, benchmark-4.0.0, randomly-3.15.0, subtests-0.12.1, flaky-3.8.1, hypothesis-6.47.5, asyncio-0.23.7, nbmake-1.5.3, repeat-0.9.3\r\nasyncio: mode=Mode.STRICT\r\n\r\n============================================================================= 4011 tests collected in 6.46s ==============================================================================\r\n\r\nreal    0m8.935s\r\nuser    0m10.833s\r\nsys     0m2.163s\r\n```\r\n\r\n\r\nVerification:\r\n\r\nRun `time pytest --collect-only` in the root openpilot directory and post both the `real` time and the collection time as reported by pytest (`=== 4011 tests collected in 6.61s ===`). Include the times before and after your PR."
   },
   {
     "number": 9,
