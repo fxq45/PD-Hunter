@@ -42,7 +42,7 @@ func (c *Client) baseURL() string {
 
 // ScanAll scans all organizations in the config and returns deduplicated issues.
 func (c *Client) ScanAll(config *Config) ([]Issue, error) {
-	var allIssues []Issue
+	allIssues := make([]Issue, 0)
 	seen := make(map[string]bool)
 
 	for _, org := range config.Organizations {
