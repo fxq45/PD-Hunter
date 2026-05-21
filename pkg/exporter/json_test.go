@@ -89,6 +89,34 @@ func TestWriteJSON(t *testing.T) {
 		}
 	})
 
+	t.Run("writes empty array for nil slice", func(t *testing.T) {
+		tmpDir := t.TempDir()
+		outFile := filepath.Join(tmpDir, "nil.json")
+
+		err := WriteJSON(nil, outFile)
+		if err != nil {
+			t.Fatalf("WriteJSON returned error: %v", err)
+		}
+
+		data, err := os.ReadFile(outFile)
+		if err != nil {
+			t.Fatalf("Failed to read output file: %v", err)
+		}
+
+		var result []scraper.Issue
+		if err := json.Unmarshal(data, &result); err != nil {
+			t.Fatalf("Output is not valid JSON: %v", err)
+		}
+
+		if result == nil {
+			t.Fatal("Expected empty array, got null")
+		}
+
+		if len(result) != 0 {
+			t.Fatalf("Expected 0 issues, got %d", len(result))
+		}
+	})
+
 	t.Run("returns error for invalid path", func(t *testing.T) {
 		err := WriteJSON(issues, "/nonexistent/dir/file.json")
 		if err == nil {

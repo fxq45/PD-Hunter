@@ -10,6 +10,9 @@ import (
 
 // WriteJSON writes issues to a JSON file with indentation.
 func WriteJSON(issues []scraper.Issue, outputFile string) error {
+	if issues == nil {
+		issues = []scraper.Issue{}
+	}
 	data, err := json.MarshalIndent(issues, "", "  ")
 	if err != nil {
 		return fmt.Errorf("marshaling JSON: %w", err)

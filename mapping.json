@@ -26,9 +26,9 @@
       "note": "Open-source Firebase alternative."
     },
     {
-      "name": "cal-com",
+      "name": "calcom",
       "labels": ["bounty", "💰 Bounty"],
-      "note": "Open-source scheduling infrastructure."
+      "note": "Open-source scheduling infrastructure (formerly cal-com)."
     },
     {
       "name": "twentyhq",
@@ -91,9 +91,9 @@
       "note": "Invincible distributed computing platform."
     },
     {
-      "name": "million-js",
+      "name": "millionco",
       "labels": ["bounty"],
-      "note": "Extremely fast virtual DOM for React."
+      "note": "Extremely fast virtual DOM for React (formerly million-js)."
     },
     {
       "name": "zio",
