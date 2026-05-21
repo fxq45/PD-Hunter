@@ -41,7 +41,7 @@ def main():
         updated += 1
 
         print(
-            f"  #{issue['number']:>6} | "
+            f"  {issue['repository']}#{issue['number']:>6} | "
             f"Score: {score:>3} | "
             f"A:{breakdown['amount']:>3} F:{breakdown['feasibility']:>2} "
             f"C:{breakdown['competition']:>3} Fr:{breakdown['freshness']:>3} | "

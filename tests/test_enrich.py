@@ -1,4 +1,5 @@
 """Tests for enrich_bounties.py core functions."""
+import json
 import sys
 import os
 import pytest
@@ -12,6 +13,7 @@ from enrich_bounties import (
     get_bounty_tier,
     is_hidden_gem,
     calculate_bounty_score,
+    load_existing_intelligence,
 )
 
 
@@ -179,3 +181,73 @@ class TestCalculateBountyScore:
         _, bd5 = calculate_bounty_score({"open_pr_count": 5, "comment_count": 0, "updated_at": "2026-04-01T00:00:00Z"}, intel)
         
         assert bd0["competition"] > bd5["competition"]
+
+
+class TestLoadExistingIntelligence:
+    """Test that load_existing_intelligence uses composite keys to avoid
+    cross-repo issue number collisions."""
+
+    def test_same_number_different_repos_preserved(self, tmp_path, monkeypatch):
+        """Two issues with the same number but different repos should not
+        overwrite each other's intelligence."""
+        data = [
+            {
+                "number": 42,
+                "repository": "org/repo-a",
+                "title": "Issue A",
+                "hunter_intelligence": {
+                    "friction_level": "Low",
+                    "technical_hint": "Hint A",
+                },
+            },
+            {
+                "number": 42,
+                "repository": "org/repo-b",
+                "title": "Issue B",
+                "hunter_intelligence": {
+                    "friction_level": "High",
+                    "technical_hint": "Hint B",
+                },
+            },
+        ]
+        enriched_file = tmp_path / "enriched_bounties.json"
+        enriched_file.write_text(json.dumps(data))
+
+        import enrich_bounties
+        monkeypatch.setattr(enrich_bounties, "EXISTING_FILE", str(enriched_file))
+
+        intel = load_existing_intelligence()
+
+        assert len(intel) == 2
+        assert "org/repo-a#42" in intel
+        assert "org/repo-b#42" in intel
+        assert intel["org/repo-a#42"]["technical_hint"] == "Hint A"
+        assert intel["org/repo-b#42"]["technical_hint"] == "Hint B"
+
+    def test_unique_numbers_still_work(self, tmp_path, monkeypatch):
+        """Issues with unique numbers across repos load correctly."""
+        data = [
+            {
+                "number": 1,
+                "repository": "org/repo-a",
+                "title": "Issue 1",
+                "hunter_intelligence": {"friction_level": "Low", "technical_hint": "H1"},
+            },
+            {
+                "number": 2,
+                "repository": "org/repo-b",
+                "title": "Issue 2",
+                "hunter_intelligence": {"friction_level": "Medium", "technical_hint": "H2"},
+            },
+        ]
+        enriched_file = tmp_path / "enriched_bounties.json"
+        enriched_file.write_text(json.dumps(data))
+
+        import enrich_bounties
+        monkeypatch.setattr(enrich_bounties, "EXISTING_FILE", str(enriched_file))
+
+        intel = load_existing_intelligence()
+
+        assert len(intel) == 2
+        assert intel["org/repo-a#1"]["technical_hint"] == "H1"
+        assert intel["org/repo-b#2"]["technical_hint"] == "H2"
