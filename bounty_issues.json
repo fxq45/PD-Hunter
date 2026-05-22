@@ -8,30 +8,13 @@
       "maintainer approved",
       "💎 Bounty"
     ],
-    "comment_count": 105,
+    "comment_count": 107,
     "open_pr_count": 1,
     "repository": "onyx-dot-app/onyx",
     "created_at": "2024-08-30T23:46:34Z",
-    "updated_at": "2026-05-21T16:35:07Z",
+    "updated_at": "2026-05-22T00:11:48Z",
     "author": "Weves",
     "body": "Pull in all tickets from a specified [Jira Service Management](https://www.atlassian.com/software/jira/service-management) project. \r\n\r\nCheckout the connector creation README here for more details on the best way to add new connectors: https://github.com/danswer-ai/danswer/blob/main/backend/danswer/connectors/README.md. "
-  },
-  {
-    "number": 2239,
-    "title": "Setup proper pip package",
-    "url": "https://github.com/commaai/panda/issues/2239",
-    "state": "open",
-    "labels": [
-      "enhancement",
-      "bounty"
-    ],
-    "comment_count": 10,
-    "open_pr_count": 1,
-    "repository": "commaai/panda",
-    "created_at": "2025-07-25T20:42:52Z",
-    "updated_at": "2026-05-12T18:49:39Z",
-    "author": "adeebshihadeh",
-    "body": "`pandacan` is already a pip package, but it doesn't include the FW and some other things to fully use the panda project.\n\nThe package should be sufficient to remove panda as a submodule from [openpilot](https://github.com/commaai/openpilot) and add it as a normal Python dependency to the pyproject.toml. For validation, make an openpilot PR that does this and ensure CI passes."
   },
   {
     "number": 2557,
@@ -65,24 +48,6 @@
     "updated_at": "2026-05-12T02:16:11Z",
     "author": "adeebshihadeh",
     "body": "Make a video walkthrough of flash.comma.ai, then make a PR to embed it onto the site.\n\nGood example videos:\n* https://www.youtube.com/watch?v=NAz5NGnaDKs\u0026list=PLawfivpGQ-voT2siiz61hgVhdhtfy2y0P\n* https://www.youtube.com/watch?v=gNnRmEyVSVQ\u0026t=89s\n\nMust be high quality!"
-  },
-  {
-    "number": 2171,
-    "title": "[$500 Bounty] Refactor panda to use source + header file structure",
-    "url": "https://github.com/commaai/panda/issues/2171",
-    "state": "open",
-    "labels": [
-      "refactor",
-      "cleanup",
-      "bounty"
-    ],
-    "comment_count": 28,
-    "open_pr_count": 1,
-    "repository": "commaai/panda",
-    "created_at": "2025-03-13T11:02:22Z",
-    "updated_at": "2026-05-20T23:35:26Z",
-    "author": "robbederks",
-    "body": "It's time we move the repo from the current style (everything is a header file) to having separate source and header files. This should clean up all the import orders and `*_definitions.h` files, as well as make it a lot easier to add new drivers etc.\n\nBounty for a clean PR with minimal changes."
   },
   {
     "number": 2105,
@@ -1178,7 +1143,7 @@
       "bounty"
     ],
     "comment_count": 20,
-    "open_pr_count": 0,
+    "open_pr_count": 1,
     "repository": "commaai/agnos-builder",
     "created_at": "2024-05-25T23:05:47Z",
     "updated_at": "2026-05-01T01:41:54Z",
@@ -1720,7 +1685,7 @@
       "enhancement"
     ],
     "comment_count": 9,
-    "open_pr_count": 0,
+    "open_pr_count": 1,
     "repository": "commaai/new-connect",
     "created_at": "2024-07-05T05:26:19Z",
     "updated_at": "2025-04-05T00:31:10Z",
@@ -2114,6 +2079,24 @@
     "body": "It's been more than 2 years since our last \"How openpilot works\" blog post!\n\nhttps://blog.comma.ai/openpilot-in-2021/\n\nWrite an updated version of this post and get featured in the comma official blog!\n\nA good starting point would be to update the diagrams then update the individual descriptions of the services.\n\nThe diagrams were made using Google Drawings, the editable source files can be found here:\n\nhttps://drive.google.com/drive/folders/1B0rQmX5SKntCFADTHnSHNAG0HDb9oYpZ?usp=drive_link\n\nUsing another tool for the diagrams is ok as long as it's free (and commonly used) and you can share an editable source file.\n\nThe blog post is a single markdown file."
   },
   {
+    "number": 2171,
+    "title": "[$500 Bounty] Refactor panda to use source + header file structure",
+    "url": "https://github.com/commaai/panda/issues/2171",
+    "state": "CLOSED",
+    "labels": [
+      "refactor",
+      "cleanup",
+      "bounty"
+    ],
+    "comment_count": 29,
+    "open_pr_count": 0,
+    "repository": "commaai/panda",
+    "created_at": "2025-03-13T11:02:22Z",
+    "updated_at": "2026-05-21T21:26:13Z",
+    "author": "robbederks",
+    "body": "It's time we move the repo from the current style (everything is a header file) to having separate source and header files. This should clean up all the import orders and `*_definitions.h` files, as well as make it a lot easier to add new drivers etc.\n\nBounty for a clean PR with minimal changes."
+  },
+  {
     "number": 2237,
     "title": "Enable `cpplint`",
     "url": "https://github.com/commaai/opendbc/issues/2237",
@@ -2163,6 +2146,23 @@
     "updated_at": "2026-04-17T23:11:55Z",
     "author": "adeebshihadeh",
     "body": "Let's get Gen2 Rivians supported! Any model is eligible.\n\nRequires a harness design/schematic, a high quality lateral port, and at least a proof-of-concept for longitudinal support."
+  },
+  {
+    "number": 2239,
+    "title": "Setup proper pip package",
+    "url": "https://github.com/commaai/panda/issues/2239",
+    "state": "CLOSED",
+    "labels": [
+      "enhancement",
+      "bounty"
+    ],
+    "comment_count": 11,
+    "open_pr_count": 0,
+    "repository": "commaai/panda",
+    "created_at": "2025-07-25T20:42:52Z",
+    "updated_at": "2026-05-21T22:09:01Z",
+    "author": "adeebshihadeh",
+    "body": "`pandacan` is already a pip package, but it doesn't include the FW and some other things to fully use the panda project.\n\nThe package should be sufficient to remove panda as a submodule from [openpilot](https://github.com/commaai/openpilot) and add it as a normal Python dependency to the pyproject.toml. For validation, make an openpilot PR that does this and ensure CI passes."
   },
   {
     "number": 36515,

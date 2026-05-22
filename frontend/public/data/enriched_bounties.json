@@ -8,11 +8,11 @@
       "maintainer approved",
       "💎 Bounty"
     ],
-    "comment_count": 105,
+    "comment_count": 107,
     "open_pr_count": 1,
     "repository": "onyx-dot-app/onyx",
     "created_at": "2024-08-30T23:46:34Z",
-    "updated_at": "2026-05-21T16:35:07Z",
+    "updated_at": "2026-05-22T00:11:48Z",
     "author": "Weves",
     "body": "Pull in all tickets from a specified [Jira Service Management](https://www.atlassian.com/software/jira/service-management) project. \r\n\r\nCheckout the connector creation README here for more details on the best way to add new connectors: https://github.com/danswer-ai/danswer/blob/main/backend/danswer/connectors/README.md. ",
     "hunter_intelligence": {
@@ -27,37 +27,6 @@
         "feasibility": 30,
         "competition": 0,
         "freshness": 100
-      }
-    }
-  },
-  {
-    "number": 2239,
-    "title": "Setup proper pip package",
-    "url": "https://github.com/commaai/panda/issues/2239",
-    "state": "open",
-    "labels": [
-      "enhancement",
-      "bounty"
-    ],
-    "comment_count": 10,
-    "open_pr_count": 1,
-    "repository": "commaai/panda",
-    "created_at": "2025-07-25T20:42:52Z",
-    "updated_at": "2026-05-12T18:49:39Z",
-    "author": "adeebshihadeh",
-    "body": "`pandacan` is already a pip package, but it doesn't include the FW and some other things to fully use the panda project.\n\nThe package should be sufficient to remove panda as a submodule from [openpilot](https://github.com/commaai/openpilot) and add it as a normal Python dependency to the pyproject.toml. For validation, make an openpilot PR that does this and ensure CI passes.",
-    "hunter_intelligence": {
-      "friction_level": "Low",
-      "technical_hint": "Ensure the pip package includes all necessary firmware files and dependencies, and update pyproject.toml in openpilot to reference the new package for CI validation.",
-      "bounty_tier": "B-Tier",
-      "bounty_amount": 0,
-      "is_hidden_gem": true,
-      "bounty_score": 53,
-      "score_breakdown": {
-        "amount": 0,
-        "feasibility": 90,
-        "competition": 65,
-        "freshness": 95
       }
     }
   },
@@ -119,38 +88,6 @@
         "feasibility": 90,
         "competition": 65,
         "freshness": 95
-      }
-    }
-  },
-  {
-    "number": 2171,
-    "title": "[$500 Bounty] Refactor panda to use source + header file structure",
-    "url": "https://github.com/commaai/panda/issues/2171",
-    "state": "open",
-    "labels": [
-      "refactor",
-      "cleanup",
-      "bounty"
-    ],
-    "comment_count": 28,
-    "open_pr_count": 1,
-    "repository": "commaai/panda",
-    "created_at": "2025-03-13T11:02:22Z",
-    "updated_at": "2026-05-20T23:35:26Z",
-    "author": "robbederks",
-    "body": "It's time we move the repo from the current style (everything is a header file) to having separate source and header files. This should clean up all the import orders and `*_definitions.h` files, as well as make it a lot easier to add new drivers etc.\n\nBounty for a clean PR with minimal changes.",
-    "hunter_intelligence": {
-      "friction_level": "Medium",
-      "technical_hint": "Focus on reorganizing files by separating logic into `.c` source files and `.h` header files, ensuring proper dependency management and minimal changes to existing functionality.",
-      "bounty_tier": "A-Tier",
-      "bounty_amount": 500,
-      "is_hidden_gem": false,
-      "bounty_score": 40,
-      "score_breakdown": {
-        "amount": 10,
-        "feasibility": 60,
-        "competition": 29,
-        "freshness": 100
       }
     }
   },
@@ -244,7 +181,7 @@
         "amount": 12,
         "feasibility": 60,
         "competition": 57,
-        "freshness": 58
+        "freshness": 57
       }
     }
   },
@@ -499,7 +436,7 @@
         "amount": 2,
         "feasibility": 60,
         "competition": 58,
-        "freshness": 57
+        "freshness": 56
       }
     }
   },
@@ -759,7 +696,7 @@
         "amount": 0,
         "feasibility": 60,
         "competition": 70,
-        "freshness": 86
+        "freshness": 85
       }
     }
   },
@@ -2088,7 +2025,7 @@
         "amount": 0,
         "feasibility": 60,
         "competition": 36,
-        "freshness": 86
+        "freshness": 85
       }
     }
   },
@@ -2102,7 +2039,7 @@
       "bounty"
     ],
     "comment_count": 20,
-    "open_pr_count": 0,
+    "open_pr_count": 1,
     "repository": "commaai/agnos-builder",
     "created_at": "2024-05-25T23:05:47Z",
     "updated_at": "2026-05-01T01:41:54Z",
@@ -2114,12 +2051,12 @@
       "bounty_tier": "B-Tier",
       "bounty_amount": 0,
       "is_hidden_gem": false,
-      "bounty_score": 43,
+      "bounty_score": 39,
       "score_breakdown": {
         "amount": 0,
         "feasibility": 60,
-        "competition": 60,
-        "freshness": 90
+        "competition": 45,
+        "freshness": 89
       }
     }
   },
@@ -3078,7 +3015,7 @@
       "enhancement"
     ],
     "comment_count": 9,
-    "open_pr_count": 0,
+    "open_pr_count": 1,
     "repository": "commaai/new-connect",
     "created_at": "2024-07-05T05:26:19Z",
     "updated_at": "2025-04-05T00:31:10Z",
@@ -3090,11 +3027,11 @@
       "bounty_tier": "B-Tier",
       "bounty_amount": 0,
       "is_hidden_gem": true,
-      "bounty_score": 35,
+      "bounty_score": 31,
       "score_breakdown": {
         "amount": 0,
         "feasibility": 60,
-        "competition": 82,
+        "competition": 67,
         "freshness": 0
       }
     }
@@ -3794,6 +3731,38 @@
     }
   },
   {
+    "number": 2171,
+    "title": "[$500 Bounty] Refactor panda to use source + header file structure",
+    "url": "https://github.com/commaai/panda/issues/2171",
+    "state": "CLOSED",
+    "labels": [
+      "refactor",
+      "cleanup",
+      "bounty"
+    ],
+    "comment_count": 29,
+    "open_pr_count": 0,
+    "repository": "commaai/panda",
+    "created_at": "2025-03-13T11:02:22Z",
+    "updated_at": "2026-05-21T21:26:13Z",
+    "author": "robbederks",
+    "body": "It's time we move the repo from the current style (everything is a header file) to having separate source and header files. This should clean up all the import orders and `*_definitions.h` files, as well as make it a lot easier to add new drivers etc.\n\nBounty for a clean PR with minimal changes.",
+    "hunter_intelligence": {
+      "friction_level": "Medium",
+      "technical_hint": "Focus on reorganizing files by separating logic into `.c` source files and `.h` header files, ensuring proper dependency management and minimal changes to existing functionality.",
+      "bounty_tier": "A-Tier",
+      "bounty_amount": 500,
+      "is_hidden_gem": false,
+      "bounty_score": 44,
+      "score_breakdown": {
+        "amount": 10,
+        "feasibility": 60,
+        "competition": 42,
+        "freshness": 100
+      }
+    }
+  },
+  {
     "number": 2237,
     "title": "Enable `cpplint`",
     "url": "https://github.com/commaai/opendbc/issues/2237",
@@ -3883,6 +3852,37 @@
         "feasibility": 60,
         "competition": 92,
         "freshness": 83
+      }
+    }
+  },
+  {
+    "number": 2239,
+    "title": "Setup proper pip package",
+    "url": "https://github.com/commaai/panda/issues/2239",
+    "state": "CLOSED",
+    "labels": [
+      "enhancement",
+      "bounty"
+    ],
+    "comment_count": 11,
+    "open_pr_count": 0,
+    "repository": "commaai/panda",
+    "created_at": "2025-07-25T20:42:52Z",
+    "updated_at": "2026-05-21T22:09:01Z",
+    "author": "adeebshihadeh",
+    "body": "`pandacan` is already a pip package, but it doesn't include the FW and some other things to fully use the panda project.\n\nThe package should be sufficient to remove panda as a submodule from [openpilot](https://github.com/commaai/openpilot) and add it as a normal Python dependency to the pyproject.toml. For validation, make an openpilot PR that does this and ensure CI passes.",
+    "hunter_intelligence": {
+      "friction_level": "Low",
+      "technical_hint": "Ensure the pip package includes all necessary firmware files and dependencies, and update pyproject.toml in openpilot to reference the new package for CI validation.",
+      "bounty_tier": "B-Tier",
+      "bounty_amount": 0,
+      "is_hidden_gem": false,
+      "bounty_score": 57,
+      "score_breakdown": {
+        "amount": 0,
+        "feasibility": 90,
+        "competition": 78,
+        "freshness": 100
       }
     }
   },
