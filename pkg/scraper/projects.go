@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"strings"
 	"time"
 )
 
@@ -232,6 +233,11 @@ func (c *Client) FetchProjectItems(orgLogin string, projectNumber int) ([]GitHub
 				continue
 			}
 
+			// Skip closed issues
+			if strings.ToLower(node.Content.State) != "open" {
+				continue
+			}
+
 			labels := make([]GitHubLabel, len(node.Content.Labels.Nodes))
 			for i, l := range node.Content.Labels.Nodes {
 				labels[i] = GitHubLabel{Name: l.Name}
@@ -246,7 +252,7 @@ func (c *Client) FetchProjectItems(orgLogin string, projectNumber int) ([]GitHub
 				Number:    node.Content.Number,
 				Title:     node.Content.Title,
 				HTMLURL:   node.Content.URL,
-				State:     node.Content.State,
+				State:     strings.ToLower(node.Content.State),
 				Labels:    labels,
 				Comments:  node.Content.Comments.TotalCount,
 				CreatedAt: node.Content.CreatedAt,
