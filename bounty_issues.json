@@ -9,11 +9,11 @@
       "maintainer approved",
       "💎 Bounty"
     ],
-    "comment_count": 202,
+    "comment_count": 203,
     "open_pr_count": 1,
     "repository": "onyx-dot-app/onyx",
     "created_at": "2024-08-30T23:46:34Z",
-    "updated_at": "2026-11-16T02:14:56Z",
+    "updated_at": "2026-11-16T08:14:59Z",
     "author": "Weves",
     "body": "Pull in all tickets from a specified [Jira Service Management](https://www.atlassian.com/software/jira/service-management) project. \r\n\r\nCheckout the connector creation README here for more details on the best way to add new connectors: https://github.com/danswer-ai/danswer/blob/main/backend/danswer/connectors/README.md. "
   },
@@ -68,23 +68,6 @@
     "updated_at": "2026-11-15T09:46:31Z",
     "author": "adeebshihadeh",
     "body": "Let's get the new F-150s supported! Any [TRON platform](https://bluepilot.dev/2025/08/13/confirmed-tron-status-list/) car model is also eligible for this bounty.\n\nRequires a harness design (schematic), a high quality lateral port, and at least a proof-of-concept for longitudinal support.\n\nThe full $10k is for a normal openpilot experience: user is ready to go after installing compatible hardware and openpilot. $2k for support similar to the 2021 Toyota Rav4 Prime, where it works if the user manually configures extra parameters.\n\n\u003cimg width=\"1200\" height=\"800\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/51df485b-8762-4325-8bb8-8be3d4d56ff1\" /\u003e"
-  },
-  {
-    "number": 2557,
-    "title": "Enable 100% branch coverage check",
-    "url": "https://github.com/commaai/opendbc/issues/2557",
-    "state": "open",
-    "labels": [
-      "CI / testing",
-      "bounty"
-    ],
-    "comment_count": 12,
-    "open_pr_count": 1,
-    "repository": "commaai/opendbc",
-    "created_at": "2025-07-25T16:20:20Z",
-    "updated_at": "2026-09-15T23:22:18Z",
-    "author": "adeebshihadeh",
-    "body": "Your goal is to [enable](https://github.com/commaai/opendbc/pull/2555) the branch coverage check and carefully fix all the violations.\n\nFor each violation:\n1. can we remove this branch?\n2. can we rewrite this branch?\n3. add test coverage\n\nOur test coverage should be fairly complete, so this should mostly be removing and rewriting.\n\nHere's where we're at now:\n\u003cimg width=\"2016\" height=\"932\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/d507c6e3-bc5b-415c-ab6a-4054b60be69b\" /\u003e"
   },
   {
     "number": 128,
